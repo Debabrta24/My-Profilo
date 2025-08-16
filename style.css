@@ -34,7 +34,7 @@ body {
 }
 
 .container {
-    padding: 5px 5%;
+    padding: 10px 5%;
 }
 
 nav {
@@ -80,7 +80,7 @@ nav ul li a:hover::after {
 
 .header-text {
     /* margin-top: 20%; */
-    margin: 10px 0px 0px 0px ;
+    margin: 10px 0px 0px 0px;
     font-size: 30px;
 }
 
@@ -419,7 +419,12 @@ nav .fas {
 
 @media screen and (max-width: 900px) {
     #header {
-        background-image: url("images/phone-background.pngh");
+        /* background-image: url("images/phone-background.png"); */
+
+        background-image: url("images/background_1.png");
+        /* background: linear-gradient(#08073c, #3333ff, #300760); */
+        background-position: center;
+        background-size: cover;
     }
 
     .about-col-1 {
