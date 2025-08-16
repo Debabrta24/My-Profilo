@@ -159,7 +159,7 @@ nav ul li a:hover::after {
 
 .tab-tittle {
     display: flex;
-    margin: 20px 40px;
+    margin: 20px 0px;
 }
 
 .tab-links {
