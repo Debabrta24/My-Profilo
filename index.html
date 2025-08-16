@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/cropped_circle_image.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img class="logo" src="images/My_name.png" alt="">
+                <ul id="side-menu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About </a></li>
+                    <li><a href="#services">Servises</a></li>
+                    <li><a href="#protfolio">Protfolio</a></li>
+                    <li><a href="#contact">Contact us</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi,I'm <span><span class="D-colour">D</span>ebabrata</span> <br>..........from
+                    <span style="color: #FF9933;">I</span><span style="color: white;">n</span><span
+                        style="color: white;">d</span><span style="color: white;">i</span><span
+                        style="color: #138808;">a</span>
+                </h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- ................................................about................................  -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1"><img src="images/user.pnng" alt=""></div>
+                <div class="about-col-2">
+                    <h2 class="sub-title">About Me</h2>
+                    <!-- <p>Hello! I'm a 2nd-year Computer Science and Engineering (CSE) student with a passion for</p> -->
+                        <!-- technology, coding, and innovation. I enjoy learning programming languages, building projects,
+                        and exploring fields like AI, web development, and cybersecurity. I’m constantly growing my
+                        skills and aim to create impactful tech solutions in the future. -->
+                    <div class="tab-tittle">
+                        <p class="tab-links active-links" id="mainskill" onclick="opentabsk()">Skills</p>
+                        <p class="tab-links" id="mainExp" onclick="opentabEx()">Exprience</p>
+                        <p class="tab-links" id="mainEd" onclick="opentabEdu()">Education</p>
+                    </div>
+                    <div class="tab-contents  active-tab " id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Lorem, ipsum dolor.</li>
+                            <li><span>Web Devolopment</span><br>Lorem, ipsum dolor.</li>
+                            <li><span>App Devolopment</span><br>Lorem, ipsum dolor.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents " id="Exprience">
+                        <ul>
+                            <li><span>Exprience</span><br>Lorem, ipsum dolor.</li>
+                            <li><span>Web Devolopment</span><br>Lorem, ipsum dolor.</li>
+                            <li><span>App Devolopment</span><br>Lorem, ipsFum dolor.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents " id="Education">
+                        <ul>
+                            <li><span>Secondary</span><br>Lorem, ipsum dolor.</li>
+                            <li><span>Web Devolopment</span><br>Lorem, ipsum dolor.</li>
+                            <li><span>App Devolopment</span><br>Lorem, ipsum dolor.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ...................................servises.................................-->
+
+
+    <div class="services">
+        <div class="container container_new">
+            <h1 class="sub-title">My servises</h1>
+        </div>
+
+        <div class="servises-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>web Designer</h2>
+                <p>Hello! I'm a 2nd-year Computer Science and Engineering (CSE) student with a passion for technology,
+                    coding, and innovation. I enjoy learning programming languages, building projects, and exploring
+                    fields like AI, web development, and cybersecurity. I’m constantly growing my skills and aim to
+                    create impactful tech solutions in the future.</p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>web Designer</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet fuga quisquam voluptas quas.
+                    Perspiciatis aspernatur error dolore unde nobis. Eius animi, repudia</p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-app-store"></i>
+                <h2>web Designer</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet fuga quisquam voluptas quas.
+                    Perspiciatis aspernatur error dolore unde nobis. Eius animi, repudia</p>
+                <a href="#">learn more</a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- .......................................................protfolio.........................................  -->
+    <div id="protfolio">
+        <div class="container container_new">
+            <h1 class="sub-title">
+                My work
+            </h1>
+            <br>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Social media app conect you </h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic in fugiat ex cum quis ipsum,
+                            quidem voluptas odit aliquid nemo?</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Social media app conect you </h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic in fugiat ex cum quis ipsum,
+                            quidem voluptas odit aliquid nemo?</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Social media app conect you </h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic in fugiat ex cum quis ipsum,
+                            quidem voluptas odit aliquid nemo?</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn"> See more </a>
+        </div>
+    </div>
+
+    <!-- ......................Contact ......................... -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1>
+                    <p> <i class="fas fa-paper-plane"></i> Mr@gmail.com</p>
+                    <p> <i class="fas fa-phone-square-alt"></i> +91 9093013606</p>
+                    <div class="social_icons">
+                        <!-- <a href="url"><i class="fab fa-facebook"></i></a> -->
+                        <a href="url"><i class="fab fa-twitter-square"></i></a>
+                        <a href="url"><i class="fab fa-instagram"></i></a>
+                        <a href="url"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <div>
+                        <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="email" name="Email" placeholder="Enter your email " required>
+                        <textarea name="Massege" id="" rows="6" placeholder="Your massege"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"> </span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>Copyright kebin dsklknwdnk made eith love</p>
+    </div>
+
+</body>
+<script src="script.js"></script>
+<script src="https://kit.fontawesome.com/c425e24a8.js" crossorigin="anonymous"></script>
+
+
+</html>
+
+<!-- Time started =>1 hour -->
+
+<!-- https://www.canva.com/design/DAGu7_Bjn7M/Pp1oP5XJaKchJF_zf3hHuw/edit -->
