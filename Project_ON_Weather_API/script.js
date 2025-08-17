@@ -65,17 +65,17 @@ async function checkWeather() {
         document.querySelector(".humidity").innerHTML = data.current.humidity + " %";
 
         // Weather-based icon
-        const condition = data.current.condition.text.toLowerCase();
-        if (condition.includes("rain")) {
-            document.querySelector(".weatherIcon").src =
-                "https://images.unsplash.com/photo-1520209759809-a9bcb6cb3241?q=80&w=870&auto=format&fit=crop";
-        } else if (condition.includes("cloud")) {
-            document.querySelector(".weatherIcon").src =
-                "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=870&auto=format&fit=crop";
-        } else {
-            document.querySelector(".weatherIcon").src =
-                "https://images.unsplash.com/photo-1501973801540-537f08ccae7b?q=80&w=870&auto=format&fit=crop";
-        }
+        // const condition = data.current.condition.text.toLowerCase();
+        // if (condition.includes("rain")) {
+        //     document.querySelector(".weatherIcon").src =
+        //         "https://images.unsplash.com/photo-1520209759809-a9bcb6cb3241?q=80&w=870&auto=format&fit=crop";
+        // } else if (condition.includes("cloud")) {
+        //     document.querySelector(".weatherIcon").src =
+        //         "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=870&auto=format&fit=crop";
+        // } else {
+        //     document.querySelector(".weatherIcon").src =
+        //         "https://images.unsplash.com/photo-1501973801540-537f08ccae7b?q=80&w=870&auto=format&fit=crop";
+        // }
     } catch (err) {
         console.error("Weather API error:", err);
     }
