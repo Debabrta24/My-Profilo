@@ -5,24 +5,27 @@
 
 body {
     background-color: black;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .card {
+    /* margin: auto; */
     width: 90%;
     height: 90%;
-    /* max-width: 470px; */
+    max-width: 470px;
     background: linear-gradient(135deg, #00feba, #6e5be8);
     color: #fff;
     margin: 100px auto 0;
     border-radius: 20px;
     padding: 40px 35px;
     text-align: center;
-    
-        overflow: hidden;
+    /* position: fixed; */
+    /* overflow: hidden; */
+    /* justify-content: center; */
 }
 
 .search {
+    
     width: 100%;
     display: flex;
     align-items: center;
@@ -110,6 +113,7 @@ body {
         border-radius: 0;
         padding: 40px 35px;
         text-align: center;
+        /* overflow: hi; */
     }
 
 }
