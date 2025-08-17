@@ -79,8 +79,8 @@ nav ul li a:hover::after {
 }
 
 .header-text {
-    /* margin-top: 20%; */
-    margin: 10px 0px 0px 0px;
+    margin-top: 20%;
+    /* margin: 0px 0px 0px 0px; */
     font-size: 30px;
 }
 
@@ -421,8 +421,8 @@ nav .fas {
     #header {
         /* background-image: url("images/phone-background.png"); */
 
-        background-image: url("images/background_1.png");
-        /* background: linear-gradient(#08073c, #3333ff, #300760); */
+        /* background-image: url("images/background_1.png"); */
+        background: linear-gradient(#08073c, #3333ff, #300760);
         background-position: center;
         background-size: cover;
     }
