@@ -1,0 +1,52 @@
+[
+  {
+    "type": "photo",
+    "file_id": "AgACAgUAAxkBAAMraKHu6uZSaBpiA2TK_7HqfVamL1YAAs3HMRtGCxBVNXR1sd1Ov3EBAAMCAAN5AAM2BA",
+    "view_url": "https://api.telegram.org/file/bot7887860332:AAER2wfGpaOCQ7LehLvIt7bB0dOYCGkYmQs/photos/file_0.jpg"
+  },
+  {
+    "type": "document",
+    "file_name": "এবং জগৎশেঠের রত্নকুঠী.pdf",
+    "file_id": "BQACAgUAAxkBAAMsaKHvGl9Vjm6ekQlir40ael7C06wAApQXAAJGCxBVNDn8exklcAc2BA",
+    "view_url": "https://docs.google.com/viewer?url=https%3A%2F%2Fapi.telegram.org%2Ffile%2Fbot7887860332%3AAAER2wfGpaOCQ7LehLvIt7bB0dOYCGkYmQs%2Fdocuments%2Ffile_1.pdf&embedded=true"
+  },
+  {
+    "type": "photo",
+    "file_id": "AgACAgUAAxkBAAMtaKHvV0MYO_qErKJUGbfiIFWCrSoAAt3HMRtGCxBVxiXnPSR9cUMBAAMCAAN5AAM2BA",
+    "view_url": "https://api.telegram.org/file/bot7887860332:AAER2wfGpaOCQ7LehLvIt7bB0dOYCGkYmQs/photos/file_2.jpg"
+  },
+  {
+    "type": "photo",
+    "file_id": "AgACAgUAAxkBAAMuaKHvV0jdQBan1hXbYnqyJAlotCcAAt7HMRtGCxBVnERp4wXXhA4BAAMCAAN5AAM2BA",
+    "view_url": "https://api.telegram.org/file/bot7887860332:AAER2wfGpaOCQ7LehLvIt7bB0dOYCGkYmQs/photos/file_3.jpg"
+  },
+  {
+    "type": "photo",
+    "file_id": "AgACAgUAAxkBAAMvaKHvV9z8Rh1axq05CAWNyDGmJy0AAt_HMRtGCxBVgufN60-rS7EBAAMCAAN5AAM2BA",
+    "view_url": "https://api.telegram.org/file/bot7887860332:AAER2wfGpaOCQ7LehLvIt7bB0dOYCGkYmQs/photos/file_4.jpg"
+  },
+  {
+    "type": "document",
+    "file_name": "আনন্দমেলা_পূজাবার্ষিকী_১৪৩২.pdf",
+    "file_id": "BQACAgUAAxkBAAMwaKH03-f9A8LASwXM2lPvwpWz6FUAAs8cAAIvlAhVzeKXKdWz3Aw2BA",
+    "view_url": null
+  },
+  {
+    "type": "document",
+    "file_name": "আনন্দমেলা_পূজাবার্ষিকী_১৪৩২.pdf",
+    "file_id": "BQACAgUAAxkBAAMwaKH03-f9A8LASwXM2lPvwpWz6FUAAs8cAAIvlAhVzeKXKdWz3Aw2BA",
+    "view_url": null
+  },
+  {
+    "type": "document",
+    "file_name": "68_Debabrata_Paul_CA1.pptx",
+    "file_id": "BQACAgUAAxkBAAMyaKH1J4ksVeiLZ56XDtSJQB2_ne8AArQXAAJGCxBV4McIR6RuMyU2BA",
+    "view_url": "https://api.telegram.org/file/bot7887860332:AAER2wfGpaOCQ7LehLvIt7bB0dOYCGkYmQs/documents/file_5.pptx"
+  },
+  {
+    "type": "document",
+    "file_name": "5_6129411488126867348.pdf",
+    "file_id": "BQACAgUAAxkBAAMzaKH1R4YRJTdHzaxGVJvgY_zSSoUAArYXAAJGCxBVmAREM8RbQdE2BA",
+    "view_url": "https://docs.google.com/viewer?url=https%3A%2F%2Fapi.telegram.org%2Ffile%2Fbot7887860332%3AAAER2wfGpaOCQ7LehLvIt7bB0dOYCGkYmQs%2Fdocuments%2Ffile_6.pdf&embedded=true"
+  }
+]
