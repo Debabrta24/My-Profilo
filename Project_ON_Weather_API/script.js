@@ -1,12 +1,50 @@
-const API = "0733487207aa4d338c324211250607";
-let name1 = ""
 const SearchInput = document.querySelector(".searchValu");
 
-console.log(SearchInput.value)
+// console.log(SearchInput.value)
 
+const output = document.getElementsByClassName(".searchValu");
 document.querySelector(".searchIcon").addEventListener("click", function () {
     name1 = SearchInput.value;
 })
+
+
+setTimeout(() => {
+    navigator.geolocation.getCurrentPosition(
+        async (position) => {
+            const latitude = position.coords.latitude;
+            const longitude = position.coords.longitude;
+            try {
+                const response = await fetch(
+                    `https://nominatim.openstreetmap.org/reverse?lat=${latitude}&lon=${longitude}&format=json`
+                );
+                const data = await response.json();
+
+                const address = data.address;
+                const city = address.city || address.town || address.village || "";
+                // const state = address.state || "";
+                // const country = address.country || "";
+
+                // output.innerHTML = `${city}
+            //  `
+                // const city1 = city;
+                // console.log(city1)
+                name1 = city
+            }
+            catch (error) {
+                // output.innerHTML = "Failed to fetch location name.";
+            }
+        },
+        (error) => {
+            // output.innerHTML = "Error: " + error.message;
+        }
+    );
+}, 1000);
+
+
+
+const API = "0733487207aa4d338c324211250607";
+let name1 = ""
+
 async function checkWeather() {
     const responce = await fetch(`http://api.weatherapi.com/v1/current.json?key=${API}&q=india/${name1}%20begal&aqi=no`);
     const data = await responce.json();
