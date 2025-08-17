@@ -65,11 +65,11 @@ form.addEventListener('submit', e => {
 })
 
 function Callme() {
-    window.location.href = ("tel:+919876543210");
+    window.location.href = ("tel:+919093013606");
 }
 
 function Emailme() {
-    window.location.href = ("https://www.example.com/new-page", "_blank");
+    window.location.href = "mailto:someone@example.com?subject=Hello&body=I%20want%20to%20connect%20with%20you";
 
 
 }
