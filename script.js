@@ -58,8 +58,18 @@ form.addEventListener('submit', e => {
             msg.innerHTML = "Massege sent successfully thank you "
             setTimeout(function () {
                 msg.innerHTML = " "
-            },5000)
+            }, 5000)
         })
-        from.reset()
+    from.reset()
         .catch(error => console.error('Error!', error.message))
 })
+
+function Callme() {
+    window.location.href = ("tel:+919876543210");
+}
+
+function Emailme() {
+    window.location.href = ("https://www.example.com/new-page", "_blank");
+
+
+}
