@@ -1,13 +1,16 @@
 const SearchInput = document.querySelector(".searchValu");
+const API = "0733487207aa4d338c324211250607";
+let name1 = "";
 
-// console.log(SearchInput.value)
-
-const output = document.getElementsByClassName(".searchValu");
+// When search button is clicked
 document.querySelector(".searchIcon").addEventListener("click", function () {
-    name1 = SearchInput.value;
-})
+    name1 = SearchInput.value.trim();
+    if (name1) {
+        checkWeather();
+    }
+});
 
-
+// Get location automatically after 1 second
 setTimeout(() => {
     navigator.geolocation.getCurrentPosition(
         async (position) => {
@@ -18,57 +21,44 @@ setTimeout(() => {
                     `https://nominatim.openstreetmap.org/reverse?lat=${latitude}&lon=${longitude}&format=json`
                 );
                 const data = await response.json();
-
                 const address = data.address;
                 const city = address.city || address.town || address.village || "";
-                // const state = address.state || "";
-                // const country = address.country || "";
-
-                // output.innerHTML = `${city}
-            //  `
-                // const city1 = city;
-                // console.log(city1)
-                name1 = city
-            }
-            catch (error) {
-                // output.innerHTML = "Failed to fetch location name.";
+                name1 = city;
+                checkWeather();
+            } catch (error) {
+                console.error("Location fetch failed:", error);
             }
         },
         (error) => {
-            // output.innerHTML = "Error: " + error.message;
+            console.error("Geolocation error:", error.message);
         }
     );
 }, 1000);
 
-
-
-const API = "0733487207aa4d338c324211250607";
-let name1 = ""
-
+// Fetch weather data
 async function checkWeather() {
-    const responce = await fetch(`http://api.weatherapi.com/v1/current.json?key=${API}&q=india/${name1}%20begal&aqi=no`);
-    const data = await responce.json();
-    document.querySelector(".temp").innerHTML = data.current.temp_c + " °C"
-    document.querySelector(".city").innerHTML = data.location.name
-    document.querySelector(".wind").innerHTML = data.current.wind_kph + " km/hr"
-    document.querySelector(".humidity").innerHTML = data.current.humidity + " %"
-    if (data.current.condition.text === "LIght rain") {
-        document.querySelector(".weatherIcon").src = "https://images.unsplash.com/photo-1520209759809-a9bcb6cb3241?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    if (!name1) return;
+    try {
+        const responce = await fetch(`https://api.weatherapi.com/v1/current.json?key=${API}&q=${name1}&aqi=no`);
+        const data = await responce.json();
+
+        document.querySelector(".temp").innerHTML = data.current.temp_c + " °C";
+        document.querySelector(".city").innerHTML = data.location.name;
+        document.querySelector(".wind").innerHTML = data.current.wind_kph + " km/hr";
+        document.querySelector(".humidity").innerHTML = data.current.humidity + " %";
+
+        // Change icon based on weather
+        if (data.current.condition.text.toLowerCase().includes("rain")) {
+            document.querySelector(".weatherIcon").src =
+                "https://images.unsplash.com/photo-1520209759809-a9bcb6cb3241?q=80&w=870&auto=format&fit=crop";
+        } else if (data.current.condition.text.toLowerCase().includes("cloud")) {
+            document.querySelector(".weatherIcon").src =
+                "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=870&auto=format&fit=crop";
+        } else {
+            document.querySelector(".weatherIcon").src =
+                "https://images.unsplash.com/photo-1501973801540-537f08ccae7b?q=80&w=870&auto=format&fit=crop";
+        }
+    } catch (err) {
+        console.error("Weather API error:", err);
     }
-
 }
-
-
-
-setInterval(() => {
-
-    checkWeather();
-
-}, 2000)
-
-
-
-
-// current.condition.text
-
-// "Cloudy"
