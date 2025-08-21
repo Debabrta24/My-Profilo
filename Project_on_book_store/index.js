@@ -1,7 +1,7 @@
 const axios = require("axios");
 const fs = require("fs");
 
-const TOKEN = "7887860332:AAER2wfGpaOCQ7LehLvIt7bB0dOYCGkYmQs";
+const TOKEN = "8252823839:AAHJ57P0HVsbV7h0nMBru0FCn3aOaKqU_zc";
 const API_URL = `https://api.telegram.org/bot${TOKEN}`;
 
 async function getFileLink(fileId) {
